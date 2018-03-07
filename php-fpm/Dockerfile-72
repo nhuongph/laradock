@@ -395,6 +395,8 @@ ADD ./xlaravel.pool.conf /usr/local/etc/php-fpm.d/
 
 RUN usermod -u 1000 www-data
 
+RUN apt-get install -y uchardet libuchardet-dev
+
 WORKDIR /var/www
 
 CMD ["php-fpm"]
