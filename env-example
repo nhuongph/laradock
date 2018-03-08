@@ -188,6 +188,7 @@ MARIADB_ENTRYPOINT_INITDB=./mariadb/docker-entrypoint-initdb.d
 
 ### POSTGRES ###########################################################################################################
 
+POSTGRES_VERSION=9.5.10-alpine
 POSTGRES_DB=enigma
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=none
@@ -234,6 +235,7 @@ MINIO_PORT=9000
 
 ### ADMINER ############################################################################################################
 
+ADM_VERSION=4.6.2
 ADM_PORT=8080
 ADM_INSTALL_MSSQL=false
 

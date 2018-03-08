@@ -1,4 +1,4 @@
-FROM adminer:4.6.2
+FROM adminer:${VERSION}
 
 # Version 4.3.1 contains PostgreSQL login errors. See docs.
 # See https://sourceforge.net/p/adminer/bugs-and-features/548/
