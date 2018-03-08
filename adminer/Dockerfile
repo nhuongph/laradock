@@ -1,3 +1,4 @@
+ARG ADM_VERSION=4.6.2
 FROM adminer:${ADM_VERSION}
 
 # Version 4.3.1 contains PostgreSQL login errors. See docs.

@@ -292,7 +292,10 @@ services:
 ### PostgreSQL Container ####################################
 
     postgres:
-      build: ./postgres
+      build:
+        context: ./postgres
+        args:
+          - POSTGRES_VERSION=${POSTGRES_VERSION}
       volumes:
         - ${DATA_SAVE_PATH}/postgres:/var/lib/postgresql
       ports:
@@ -478,6 +481,7 @@ services:
         context: ./adminer
         args:
           - INSTALL_MSSQL=${ADM_INSTALL_MSSQL}
+          - ADM_VERSION=${ADM_VERSION}
       ports:
         - "${ADM_PORT}:8080"
       depends_on:
